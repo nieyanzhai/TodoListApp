@@ -4,5 +4,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="TodoListApp.Views.UserControls.AddItemView">
-    Welcome to Avalonia!
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+            <Button DockPanel.Dock="Bottom" Margin="0 0 2 0"
+                    Command="{Binding Ok}">
+                OK
+            </Button>
+            <Button DockPanel.Dock="Bottom" Margin="2 0 0 0"
+                    Command="{Binding Cancel}">
+                Cancel
+            </Button>
+        </StackPanel>
+        <TextBox AcceptsReturn="True"
+                 Text="{Binding Description}"
+                 Watermark="Enter your TODO" />
+    </DockPanel>
 </UserControl>

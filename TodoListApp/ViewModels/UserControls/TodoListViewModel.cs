@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using TodoListApp.Models;
 
-namespace TodoListApp.ViewModels;
+namespace TodoListApp.ViewModels.UserControls;
 
 public class TodoListViewModel : ViewModelBase
 {
